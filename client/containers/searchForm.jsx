@@ -118,6 +118,10 @@ export default function searchForm () {
         </div>
     ) : (
         <div className="background2">
+                <h1 className="searchResults">Search Results</h1>
+                <div className="resetDiv">
+                    <button className="resetButton" onClick={() => setLoading(true)}>Search Again</button>
+                </div>
                 {searchResults.map((result, index) => {
                     console.log('building cards')
                     return (

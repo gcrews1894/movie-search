@@ -55,7 +55,7 @@ export default function MovieCard (props) {
         
             )}
             <div className="infoDiv">
-                <button className="infoButton" onClick={()=> getImportantDetails(details)}>Show Cast and Crew</button>
+                <button className="infoButton" onClick={()=> getImportantDetails(details)}>{!isShown? 'Show Cast and Crew' : 'Show Synopsis'}</button>
             </div>
         </div>
     )
