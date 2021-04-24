@@ -1,8 +1,9 @@
 import React from "react";
+import SearchForm from './containers/searchForm.jsx'
 
 function App() {
   return (
-    <div>Have Fun Building Stuff!!</div>
+    <SearchForm />
   );
 }
 

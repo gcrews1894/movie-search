@@ -1,0 +1,68 @@
+.background {
+    height: 100vh;
+    background: url('/Users/gavincrews/Documents/Coding Projects/movie-search/client/assets/background3.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 2em 1em 2em;
+        height: 20em;
+        width: 40em;
+        color: white;
+        background: inherit;
+        z-index: 1;
+        border-radius: 10px;
+        box-shadow: 0 1em 1rem 0 rgba(0, 0, 0, .5); 
+        overflow: hidden;
+        &::before {
+            filter: blur(10px);
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            box-shadow: inset 0 0 2000px hsla(0, 0%, 100%, .7);
+            background: inherit;
+            border-radius: 10px;
+        }
+        h1 {
+            font-weight: 100;
+            font-size: 48px;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 70%;
+            .searchField {
+                border: none;
+                line-height: 2em;
+                padding: .5em 1em .5em 1em;
+                width: 100%;
+                border-radius: 3em;
+                margin-bottom: 1em;
+                &:focus {
+                    outline: none;
+                }
+            }
+            .searchButton {
+                font-size: 16px;
+                padding: .75em 2em .75em 2em;
+                border-radius: 3em;
+                border: none;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
